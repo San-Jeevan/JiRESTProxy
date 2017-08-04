@@ -1,5 +1,7 @@
 # JiRESTProxy
 
+--FREELANCER DEVELOPERS, JUST IGNORE THE PublicProxyAzureFunction---
+
 How to test the api:
 
 Send POST request to http://localhost:62058/api/proxy/CorsProxy (Note port may be different on your IIS express)
