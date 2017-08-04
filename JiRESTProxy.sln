@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26724.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicProxyCSharp", "PublicProxyCSharp\PublicProxyCSharp.csproj", "{8E1D95A0-B8F3-4022-BBBF-1B3F4E51735B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicProxyAzureFunction", "PublicProxyAzureFunction\PublicProxyAzureFunction.csproj", "{C26E3474-F3F2-40EF-A205-451E4001A988}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8E1D95A0-B8F3-4022-BBBF-1B3F4E51735B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E1D95A0-B8F3-4022-BBBF-1B3F4E51735B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E1D95A0-B8F3-4022-BBBF-1B3F4E51735B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C26E3474-F3F2-40EF-A205-451E4001A988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C26E3474-F3F2-40EF-A205-451E4001A988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C26E3474-F3F2-40EF-A205-451E4001A988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C26E3474-F3F2-40EF-A205-451E4001A988}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
