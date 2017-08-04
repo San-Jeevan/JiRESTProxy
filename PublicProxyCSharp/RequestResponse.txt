@@ -1,0 +1,82 @@
+﻿REQUEST #1:
+
+Host: localhost:62058
+Connection: keep-alive
+Content-Length: 232
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Referer: http://localhost:3000/jirest
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nb-NO,nb;q=0.8,no;q=0.6,nn;q=0.4,en-US;q=0.2,en;q=0.2
+
+{
+	"method": "POST",
+	"url": "https://apiendpoint.gressquel.com/api/HelloWorld",
+	"body": "{\"name\": \"Azure\"}",
+	"headers": ["User-Agent: JiREST", "Host: apiendpoint.gressquel.com", "Accept: application/json", "Content-type: application/json"]
+}
+
+
+
+EXPECTED RESPONSE #1:
+
+{
+	"method": "POST",
+	"url": "https://apiendpoint.gressquel.com/api/HelloWorld",
+	"reqheaders": "User-Agent: JiREST\r\nHost: apiendpoint.gressquel.com\r\nAccept: application/json\r\nContent-type: application/json",
+	"respheaders": "Pragma: no-cache\r\nVary: Accept-Encoding\r\nCache-Control: no-cache\r\nDate: Fri, 04 Aug 2017 16:49:29 GMT\r\nServer: Microsoft-IIS/8.0\r\nX-AspNet-Version: 4.0.30319\r\nX-Powered-By: ASP.NET\r\nContent-Type: application/json; charset=utf-8\r\nExpires: -1\r\nContent-Length: 110",
+	"reqbody": "{\"name\": \"Azure\"}",
+	"respbody": "{\"Name\":\"Azure\",\"Lorem\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Compensabatur\",\"Ipsum\":1010}",
+	"bodySize": " 110",
+	"protocol": "HTTP/1.1",
+	"success": true,
+	"message": "",
+	"details": []
+}
+
+
+
+
+
+
+
+
+
+
+REQUEST #2:
+
+POST https://apiendpoint.gressquel.com/api/CorsProxy HTTP/1.1
+Host: apiendpoint.gressquel.com
+Connection: keep-alive
+Content-Length: 170
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Referer: http://localhost:3000/jirest
+Accept-Encoding: gzip, deflate, br
+Accept-Language: nb-NO,nb;q=0.8,no;q=0.6,nn;q=0.4,en-US;q=0.2,en;q=0.2
+
+{"method":"GET","url":"https://jsonplaceholder.typicode.com/posts","body":"","headers":["User-Agent: JiREST","Accept: application/json","Content-type: application/json"]}
+
+
+
+
+
+EXPECTED RESPONSE #2:
+
+{
+	"method": "GET",
+	"url": "https://jsonplaceholder.typicode.com/posts",
+	"reqheaders": "User-Agent: JiREST\r\nAccept: application/json\r\nContent-type: application/json",
+	"respheaders": "Transfer-Encoding: chunked\r\nConnection: keep-alive\r\nVary: Accept-Encoding\r\nAccess-Control-Allow-Credentials: true\r\nPragma: no-cache\r\nX-Content-Type-Options: nosniff\r\nCF-Cache-Status: REVALIDATED\r\nCF-RAY: 38930f6a2daf4285-OSL\r\nCache-Control: public, max-age=14400\r\nDate: Fri, 04 Aug 2017 16:58:13 GMT\r\nETag: W/\"6b80-Ybsq/K6GwwqrYkAsFxqDXGC7DoM\"\r\nSet-Cookie: __cfduid=db72e486e154712863b950bc829bbf0f91501865893; expires=Sat, 04-Aug-18 16:58:13 GMT; path=/; domain=.typicode.com; HttpOnly\r\nServer: cloudflare-nginx\r\nVia: 1.1 vegur\r\nX-Powered-By: Express\r\nContent-Type: application/json; charset=utf-8\r\nExpires: Fri, 04 Aug 2017 20:58:13 GMT\r\nContent-Length: 27520",
+	"reqbody": "",
+	"respbody": "[\n  {\n    <---shortened for simplicity---> \\naccusamus ratione error aut\"\n  }\n]",
+	"bodySize": "27 520",
+	"protocol": "HTTP/1.1",
+	"success": true,
+	"message": "",
+	"details": []
+}
